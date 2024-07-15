@@ -25,11 +25,12 @@ class MainActivity : AppCompatActivity() {
         val CorrectedTextAPI = retrofit.create(CorrectedTextAPI::class.java)
 
         binding.checkBtn.setOnClickListener {
+            val inputText = binding.inputWord.text.toString()
             CoroutineScope(Dispatchers.IO).launch {
-                val correctText = CorrectedTextAPI.getCorrectedTextByWord()
+                val correctText = CorrectedTextAPI.getCorrectedTextByWord(inputText)
                 runOnUiThread {
                     binding.incorrectWord.text = binding.inputWord.text.toString()
-                    binding.correctWord.text = correctText.s[0]
+                    binding.correctWord.text = correctText[0].s.joinToString(", ")
                 }
             }
         }
