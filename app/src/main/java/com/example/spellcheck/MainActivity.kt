@@ -27,10 +27,21 @@ class MainActivity : AppCompatActivity() {
         binding.checkBtn.setOnClickListener {
             val inputText = binding.inputWord.text.toString()
             CoroutineScope(Dispatchers.IO).launch {
-                val correctText = CorrectedTextAPI.getCorrectedTextByWord(inputText)
-                runOnUiThread {
-                    binding.incorrectWord.text = binding.inputWord.text.toString()
-                    binding.correctWord.text = correctText[0].s.joinToString(", ")
+                try {
+                    val correctText = CorrectedTextAPI.getCorrectedTextByWord(inputText)
+                    runOnUiThread {
+                        if (correctText.isNotEmpty()) {
+                            binding.incorrectWord.text = inputText
+                            binding.correctWord.text = correctText[0].s.joinToString(", ")
+                        } else {
+                            binding.incorrectWord.text = inputText
+                            binding.correctWord.text = "Возможно слово правильное или такого слова не существует"
+                        }
+                    }
+                } catch (e: Exception) {
+                    runOnUiThread {
+                        binding.correctWord.text = "Ошибка ${e.message}"
+                    }
                 }
             }
         }
