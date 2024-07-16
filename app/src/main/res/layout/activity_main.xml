@@ -4,12 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/incorrect_word"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/mulish_extra_bold"
+        android:textColor="#A7A7A8"
+        android:textSize="20sp"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,32 +26,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
+        android:fontFamily="@font/mulish_extra_bold"
+        android:textColor="#A7A7A8"
+        android:textSize="20sp"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/incorrect_word" />
 
-    <Button
-        android:id="@+id/check_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/correct_word" />
 
     <EditText
         android:id="@+id/input_word"
         android:layout_width="288dp"
         android:layout_height="52dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edittext_selector"
         android:ems="10"
+        android:fontFamily="@font/mulish_extra_bold"
+        android:gravity="center"
         android:hint="Введите слово с ошибкой"
         android:inputType="text"
         android:text=""
+        android:textColor="#A7A7A8"
+        android:textColorHint="#A7A7A8"
         app:layout_constraintBottom_toTopOf="@+id/check_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/correct_word" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/check_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="420dp"
+        android:text="Get"
+        android:fontFamily="@font/mulish_extra_bold"
+        android:textColor="#000000"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
