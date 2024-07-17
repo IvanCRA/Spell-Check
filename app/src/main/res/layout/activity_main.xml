@@ -44,7 +44,7 @@
         android:text=""
         android:textColor="#A7A7A8"
         android:textColorHint="#A7A7A8" />
-    
+
     <Button
         android:id="@+id/check_btn"
         android:layout_width="wrap_content"
