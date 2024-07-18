@@ -8,6 +8,7 @@ SpellCheck App - это Android-приложение, которое испол�
 - [Структура проекта](#структура-проекта)
 - [Установка](#установка)
 - [Использование](#использование)
+- [Демонстрация](#демонстрация)
 - [Конфигурация](#конфигурация)
 
 ## Технологии
@@ -46,6 +47,15 @@ SpellCheck App - это Android-приложение, которое испол�
 3. Нажмите кнопку "GET".
 4. Результат будет отображен на экране: исходное слово и исправленные варианты.
 
+## Демонстрация
+<img src="im/sp.gif" width="256"/>
+<img src="im/1.jpg" width="256"/>
+<img src="im/2.jpg" width="256"/>
+<img src="im/3.jpg" width="256"/>
+<img src="im/4.jpg" width="256"/>
+<img src="im/5.jpg" width="256"/>
+<img src="im/6.jpg" width="256"/>
+
 ## Конфигурация
 * API [Яндекс.Спеллер](https://yandex.ru/dev/speller/ "Яндекс.Спеллер"): приложение использует API [Яндекс.Спеллер](https://yandex.ru/dev/speller/ "Яндекс.Спеллер") для проверки орфографии.
 
@@ -59,6 +69,7 @@ SpellCheck App is an Android application that uses the [Yandex.Speller](https://
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Demonstration](#demonstration)
 - [Configuration](#configuration)
 
 ## Technologies
@@ -96,6 +107,16 @@ SpellCheck App is an Android application that uses the [Yandex.Speller](https://
 2. Enter the word to be spell checked.
 3. Press the “GET” button.
 4. The result will be displayed on the screen: the original word and the corrected variants.
+
+## Demonstration
+
+<img src="im/sp.gif" width="256"/>
+<img src="im/1.jpg" width="256"/>
+<img src="im/2.jpg" width="256"/>
+<img src="im/3.jpg" width="256"/>
+<img src="im/4.jpg" width="256"/>
+<img src="im/5.jpg" width="256"/>
+<img src="im/6.jpg" width="256"/>
 
 ## Configuration
 * [Yandex.Speller](https://yandex.ru/dev/speller/ "Yandex.Speller") API: the application uses [Yandex.Speller](https://yandex.ru/dev/speller/ "Yandex.Speller") API to check spelling.
